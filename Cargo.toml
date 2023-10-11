@@ -5,8 +5,11 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[features]
+cublas = ["llama-cpp-sys/cublas"]
+
 [dependencies]
-llama-cpp-sys = { git = "https://github.com/shadowmint/llama-cpp-sys.git", tag = "0.4.0" }
+llama-cpp-sys = { git = "https://github.com/avonheimburg/llama-cpp-sys.git" }
 
 [dev-dependencies]
 regex = "1.9.3"
